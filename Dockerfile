@@ -1,4 +1,4 @@
-FROM centos:7.4.1708
+FROM centos:8.1.1911
 RUN yum -y install /usr/bin/ps nfs-utils && yum clean all && rm -rf /var/cache/yum
 RUN mkdir -p /exports
 ADD run_nfs.sh /usr/local/bin/run_nfs.sh
